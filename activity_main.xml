@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/startBlinkTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Blinking Text"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/stopBlinkTextButton"
+        android:layout_toEndOf="@+id/stopBlinkTextButton" />
+
+    <Button
+        android:id="@+id/stopBlinkTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Blinking Text"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/blinkTextView"
+        android:layout_alignStart="@+id/blinkTextView" />
+
+    <TextView
+        android:id="@+id/blinkTextView"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Hello ACADGILD..!"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
